@@ -71,7 +71,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IntDir>$(SolutionDir)target\service-objects\$(Configuration)$(Platform)\</IntDir>
     <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
@@ -79,19 +79,19 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IntDir>$(SolutionDir)target\service-objects\$(Configuration)$(Platform)\</IntDir>
     <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-objects\$(Configuration)$(Platform)\</IntDir>
     <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-objects\$(Configuration)$(Platform)\</IntDir>
     <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
