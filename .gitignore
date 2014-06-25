@@ -13,3 +13,6 @@
 *.vcxproj.user
 *~
 *.iml
+og-install/og-install.sdf
+og-language/og-language.sdf
+og-rstats/og-rstats.sdf
