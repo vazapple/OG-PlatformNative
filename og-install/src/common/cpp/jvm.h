@@ -8,7 +8,7 @@
 #define __inc_common_jvm_h
 
 #include "config.h"
-#include <jni.h>
+#include "jni.h"
 
 class CJavaVM {
 private:
