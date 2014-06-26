@@ -14,5 +14,8 @@
 *~
 *.iml
 og-install/og-install.sdf
+og-install/og-install.opensdf
 og-language/og-language.sdf
+og-language/og-language.opensdf
 og-rstats/og-rstats.sdf
+og-rstats/og-rstats.opensdf
