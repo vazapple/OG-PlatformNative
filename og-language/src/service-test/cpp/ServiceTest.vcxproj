@@ -29,7 +29,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -73,23 +73,23 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-test-objects\$(Configuration)$(Platform)\</IntDir>
-    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_71A_IncludePath);$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-test-objects\$(Configuration)$(Platform)\</IntDir>
-    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_71A_IncludePath);$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-test-objects\$(Configuration)$(Platform)\</IntDir>
-    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_71A_IncludePath);$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)target\$(Configuration)$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)target\service-test-objects\$(Configuration)$(Platform)\</IntDir>
-    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_71A_IncludePath);$(FrameworkSDKDir)\include;$(INCLUDE)</IncludePath>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32</AdditionalIncludeDirectories>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
@@ -132,7 +132,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32</AdditionalIncludeDirectories>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
@@ -167,7 +167,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32</AdditionalIncludeDirectories>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
@@ -202,7 +202,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)target\generated-sources;$(SolutionDir)target\dependency\include;$(SolutionDir)src;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32</AdditionalIncludeDirectories>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
